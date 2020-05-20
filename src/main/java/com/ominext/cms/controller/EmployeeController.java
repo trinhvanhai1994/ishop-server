@@ -1,4 +1,4 @@
-package com.ominext.cms.web;
+package com.ominext.cms.controller;
 
 import java.util.List;
 
