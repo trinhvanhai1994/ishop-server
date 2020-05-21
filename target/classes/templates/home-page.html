@@ -77,7 +77,6 @@
                                 <h2 th:case="null">No record found !!</h2>
                                 <div th:case="*">
                                     <div th:each="product : ${products}">
-                                        <thead>
                                         <div>
                                             <a th:href="${'/product/' + product.id}" title="PickGunny">
                                                 <img th:src="${'/images/' + product.image}" class="img-thumbnail"
@@ -94,7 +93,6 @@
                                                 <span class="bg-success"><h3>Xem chi tiết</h3></span>
                                             </a>
                                         </div>
-                                        </thead>
                                     </div>
                                 </div>
                             </div>

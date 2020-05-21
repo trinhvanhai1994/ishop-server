@@ -3,8 +3,8 @@ package com.ominext.cms.web;
 import com.ominext.cms.exception.RecordNotFoundException;
 import com.ominext.cms.model.Product;
 import com.ominext.cms.service.ProductService;
-import com.ominext.cms.service.UserService;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,23 +12,23 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Controller
-@RequestMapping("/product")
+@CrossOrigin(origins = "http://localhost:8081")
+@RestController
+@RequestMapping("/products")
 public class ProductController {
 
     private final ProductService service;
-    private final UserService userService;
 
-    public ProductController(ProductService service, UserService userService) {
+    public ProductController(ProductService service) {
         this.service = service;
-        this.userService = userService;
     }
 
     @PostMapping
-    public void createProduct(Product product) {
+    public void createProduct(@RequestBody Product product) {
         service.save(product);
     }
 
@@ -47,7 +47,7 @@ public class ProductController {
         service.delete(id);
     }
 
-    @GetMapping("/getAll")
+    @GetMapping("/all")
     public List<Product> getAllProducts() {
         return service.getAll();
     }
