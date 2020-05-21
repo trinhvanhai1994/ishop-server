@@ -1,15 +1,6 @@
-com\ominext\cms\repository\CardRepository.class
-com\ominext\cms\service\ProductService.class
 com\ominext\cms\model\User.class
-com\ominext\cms\web\ProductController.class
-com\ominext\cms\repository\UserRepository.class
-com\ominext\cms\repository\RoleRepository.class
-com\ominext\cms\exception\RecordNotFoundException.class
-com\ominext\cms\model\Product.class
 com\ominext\cms\model\Role$RoleBuilder.class
-com\ominext\cms\model\Employee.class
-com\ominext\cms\response\Item.class
-com\ominext\cms\utils\DateUtils.class
+com\ominext\cms\configuration\WebSecurityConfiguration.class
 com\ominext\cms\service\EmployeeService.class
 com\ominext\cms\model\Role.class
 com\ominext\cms\web\CartController.class

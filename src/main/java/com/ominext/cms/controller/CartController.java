@@ -1,4 +1,4 @@
-package com.ominext.cms.web;
+package com.ominext.cms.controller;
 
 import com.ominext.cms.response.CartResponse;
 import com.ominext.cms.service.CartService;

@@ -1,4 +1,4 @@
-package com.ominext.cms.web;
+package com.ominext.cms.controller;
 
 import com.ominext.cms.exception.RecordNotFoundException;
 import com.ominext.cms.model.Product;

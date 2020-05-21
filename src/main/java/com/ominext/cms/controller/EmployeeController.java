@@ -1,18 +1,22 @@
 //package com.ominext.cms.web;
 //
+//import java.util.List;
+//
 //import com.ominext.cms.exception.RecordNotFoundException;
-//import com.ominext.cms.model.Employee;
+//import com.ominext.cms.model.User;
 //import com.ominext.cms.service.EmployeeService;
 //import com.ominext.cms.service.UserService;
+//import org.springframework.security.core.Authentication;
+//import org.springframework.security.core.context.SecurityContextHolder;
 //import org.springframework.stereotype.Controller;
 //import org.springframework.ui.Model;
 //import org.springframework.web.bind.annotation.GetMapping;
 //import org.springframework.web.bind.annotation.PathVariable;
 //import org.springframework.web.bind.annotation.PostMapping;
 //import org.springframework.web.bind.annotation.RequestMapping;
-//import org.springframework.web.servlet.ModelAndView;
 //
-//import java.util.List;
+//import com.ominext.cms.model.Employee;
+//import org.springframework.web.servlet.ModelAndView;
 //
 //@Controller
 //@RequestMapping("/")
@@ -28,7 +32,10 @@
 //	@GetMapping("/employees")
 //	public ModelAndView getAllEmployees() {
 //		List<Employee> list = service.getAllEmployees();
+//		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+//		User user = userService.findUserByUserName(auth.getName());
 //		ModelAndView modelAndView = new ModelAndView();
+//		modelAndView.addObject("user", user);
 //		modelAndView.addObject("employees", list);
 //		modelAndView.setViewName("list-employees");
 //		return modelAndView;
