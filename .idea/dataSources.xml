@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="cms" uuid="aa75faa5-5930-49b6-a5b7-a93ec81f2843">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/cms</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="ishop" uuid="164e5ea6-f066-48b0-9660-c6467a7b6737">
-      <driver-ref>mysql.8</driver-ref>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/cms</jdbc-url>
-    </data-source>
-    <data-source source="LOCAL" name="ishop-vue" uuid="0342e914-dda2-4601-80a8-c860ca898007">
+    <data-source source="LOCAL" name="ishop" uuid="db2ead0d-5991-485d-92d6-239ae44db769">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>

@@ -18,7 +18,7 @@ public class Product {
     private Double price;
     private String image;
     private Float discount;
-    private String category;
+    private Integer category;
     private Timestamp createdAt;
     private Timestamp updatedAt;
 
