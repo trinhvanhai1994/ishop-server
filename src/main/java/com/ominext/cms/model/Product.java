@@ -17,23 +17,24 @@ public class Product {
     private String name;
     private Double price;
     private String image;
+    private String description;
     private Float discount;
     private Integer category;
     private Timestamp createdAt;
     private Timestamp updatedAt;
 
-//    public enum ProductEnum {
-//        WINTER(4),
-//        FALL(3),
-//        SUMMER(2),
-//        SPRING(1);
-//
-//        ProductEnum(int id) {
-//            this.id = id;
-//        }
-//        private int id;
-//        public int ID() {
-//            return id;
-//        }
-//    }
+    public enum ProductEnum {
+        WINTER(4),
+        FALL(3),
+        SUMMER(2),
+        SPRING(1);
+
+        ProductEnum(int id) {
+            this.id = id;
+        }
+        private int id;
+        public int ID() {
+            return id;
+        }
+    }
 }

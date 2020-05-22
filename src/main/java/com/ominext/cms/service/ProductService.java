@@ -31,6 +31,10 @@ public class ProductService {
         return product.get();
     }
 
+    public List<Product> getAllByCategory(Integer category) {
+        return repository.findAllByCategory(category);
+    }
+
     public List<Product> getAllByIds(List<Long> ids) {
         return repository.findAllByIds(ids);
     }
