@@ -53,8 +53,8 @@ public class ProductController {
         return service.getAll();
     }
 
-    @GetMapping("/all")
-    public List<Product> getAllProductByCategory(@RequestParam("category") Integer category) {
+    @GetMapping("/category/{category}")
+    public List<Product> getAllProductByCategory(@PathVariable Integer category) {
         return service.getAllByCategory(category);
     }
 }
